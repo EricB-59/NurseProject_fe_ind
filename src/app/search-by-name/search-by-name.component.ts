@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import jsonData from '../data/DATA.json';
 
 @Component({
   selector: 'app-search-by-name',
@@ -6,12 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './search-by-name.component.css',
 })
 export class SearchByNameComponent {
-  data = {
-    name: 'John Doe',
-    age: 30,
-    city: 'New York',
-  };
-
-  name = this.data.name;
-  age = this.data.age;
+  users: any[] = jsonData;
 }

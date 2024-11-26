@@ -1,1 +1,5 @@
-<p>{{ name }}</p>
+<ul>
+  @for (user of users; track user){
+  <li>{{ user.first_name }}</li>
+  }
+</ul>

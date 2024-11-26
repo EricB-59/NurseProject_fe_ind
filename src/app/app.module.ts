@@ -6,15 +6,9 @@ import { AppComponent } from './app.component';
 import { SearchByNameComponent } from './search-by-name/search-by-name.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SearchByNameComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, SearchByNameComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
